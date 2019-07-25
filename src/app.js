@@ -29,7 +29,7 @@ let isRunning = false;
 module.exports = {
   server: app,
   start: (port) => {
-    if( ! isRunning ) {
+    if( !isRunning ) {
       app.listen(port, () => {
         isRunning = true;
         console.log(`Server Up on ${port}`);
