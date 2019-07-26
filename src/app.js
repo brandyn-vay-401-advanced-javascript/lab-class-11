@@ -1,5 +1,7 @@
 'use strict';
 
+const cwd = process.cwd();
+
 // 3rd Party Resources
 const express = require('express');
 const cors = require('cors');
@@ -9,9 +11,13 @@ const morgan = require('morgan');
 const errorHandler = require( './middleware/error.js');
 const notFound = require( './middleware/404.js' );
 const authRouter = require( './auth/router.js' );
+const swagger = require('./api/swagger.js');
 
 // Prepare the express app
 const app = express();
+
+// Static Routes
+app.use('/docs', express.static('docs'));
 
 // App Level MW
 app.use(cors());
@@ -19,6 +25,8 @@ app.use(morgan('dev'));
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+
+app.use(authRouter);
 
 // Catchalls
 app.use(notFound);
