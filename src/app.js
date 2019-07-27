@@ -9,7 +9,6 @@ const morgan = require('morgan');
 const errorHandler = require( './middleware/error.js');
 const notFound = require( './middleware/404.js' );
 const authRouter = require( './auth/router.js' );
-const swagger = require('./api/swagger.js');
 const router = require('../src/routes/books');
 
 // Prepare the express app
@@ -24,8 +23,8 @@ app.use(morgan('dev'));
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-app.use(authRouter);
 app.use(router);
+app.use(authRouter);
 
 // Catchalls
 app.use(notFound);
