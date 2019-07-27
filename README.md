@@ -4,10 +4,11 @@
 
 ### Author: Brandyn Vay
 
+[![Build Status](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-11.svg?branch=master)](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-11)
+
 ### Links and Resources
 * [submission PR](https://github.com/brandyn-vay-401-advanced-javascript/lab-class-11/pull/5)
 * [travis](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-11)
-  *[![Build Status](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-11.svg?branch=master)](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-11)
 * [back-end](https://bv-auth-server.herokuapp.com)
 
 #### Documentation
