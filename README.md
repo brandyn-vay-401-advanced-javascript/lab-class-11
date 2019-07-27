@@ -23,6 +23,7 @@
 #### `.env` requirements
 * `PORT` - 3000
 * `MONGODB_URI` - mongodb://localhost:27017/class11
+* `SECRET`
 
 #### Running the app
 * `npm start`
