@@ -6,35 +6,31 @@
 
 ### Links and Resources
 * [submission PR](https://github.com/brandyn-vay-401-advanced-javascript/lab-class-11/pull/5)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [travis](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-11)[![Build Status](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-11.svg?branch=master)](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-11)
+* [back-end](https://bv-auth-server.herokuapp.com)
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
 * [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
 
 ### Modules
-#### `modulename.js`
+#### `router.js`
+#### `users-model.js`
 ##### Exported Values and Methods
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - 3000
+* `MONGODB_URI` - mongodb://localhost:27017/class11
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* Endpoint: `/signup`
+  * Returns a JSON object with signin in it.
+* Endpoint: `/signin`
+  * Returns a JSON object with signup in it.
+* Endpoint: `/books`
+  * Returns a JSON object with books in it.
+  
   
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
-
-#### UML
-Link to an image of the UML for your application and response to events
+* How do you run tests? `npm test` will test the repo
