@@ -12,7 +12,7 @@
 * [back-end](https://bv-auth-server.herokuapp.com)
 
 #### Documentation
-* [jsdoc](http://xyz.com) (Server assignments)
+* [jsdoc](https://bv-auth-server.herokuapp.com/docs/)
 
 ### Modules
 #### `router.js`
