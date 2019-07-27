@@ -5,7 +5,7 @@
 ### Author: Brandyn Vay
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
+* [submission PR](https://github.com/brandyn-vay-401-advanced-javascript/lab-class-11/pull/5)
 * [travis](http://xyz.com)
 * [back-end](http://xyz.com) (when applicable)
 * [front-end](http://xyz.com) (when applicable)
