@@ -20,8 +20,13 @@ module.exports = (req, res, next) => {
   } catch(e) {
     return _authError();
   }
-
-  function _authBasic(authString) {
+/**
+ *
+ *
+ * @param {*} authString
+ * @returns
+ */
+function _authBasic(authString) {
     let base64Buffer = Buffer.from(authString,'base64'); // <Buffer 01 02...>
     let bufferString = base64Buffer.toString(); // john:mysecret
     let [username,password] = bufferString.split(':');  // variables username="john" and password="mysecret"

@@ -1,7 +1,5 @@
 'use strict';
 
-const cwd = process.cwd();
-
 // 3rd Party Resources
 const express = require('express');
 const cors = require('cors');
@@ -12,6 +10,7 @@ const errorHandler = require( './middleware/error.js');
 const notFound = require( './middleware/404.js' );
 const authRouter = require( './auth/router.js' );
 const swagger = require('./api/swagger.js');
+const router = require('../src/routes/books');
 
 // Prepare the express app
 const app = express();
@@ -25,8 +24,8 @@ app.use(morgan('dev'));
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-
 app.use(authRouter);
+app.use(router);
 
 // Catchalls
 app.use(notFound);
